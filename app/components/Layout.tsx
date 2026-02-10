@@ -18,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-10 border-b border-neutral-200 bg-white/90 backdrop-blur-sm">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <nav className="flex h-14 items-center justify-between">
             <Link
               href="/"
@@ -46,12 +46,12 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         {children}
       </main>
 
       <footer className="border-t border-neutral-200 bg-white py-8">
-        <div className="mx-auto max-w-4xl px-4 text-center text-sm text-neutral-500 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 text-center text-sm text-neutral-500 sm:px-6 lg:px-8">
           © {new Date().getFullYear()} Creative Lab. All rights reserved.
         </div>
       </footer>
