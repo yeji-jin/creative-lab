@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
-import AppNav from "@/app/components/AppNav";
+import AppNav from "@/components/AppNav";
 
 export const metadata: Metadata = {
   title: { default: "Creative Lab", template: "%s | Creative Lab" },
