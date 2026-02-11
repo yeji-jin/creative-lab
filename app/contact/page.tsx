@@ -5,11 +5,11 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <article>
-      <h1 className="text-neutral-900 text-2xl font-bold sm:text-3xl">
+    <section className="mx-auto w-full max-w-7xl px-4 pt-20 sm:px-6 lg:px-8">
+      <h1 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
         Contact
       </h1>
-      <p className="text-neutral-600 mt-4 leading-relaxed">AXP 진예지</p>
-    </article>
+      <p className="mt-4 leading-relaxed text-neutral-600">AXP 진예지</p>
+    </section>
   );
 }

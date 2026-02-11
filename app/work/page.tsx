@@ -18,16 +18,16 @@ function getCategoryBadgeStyles(category: string) {
 
 export default function WorkPage() {
   return (
-    <article>
+    <section className="mx-auto w-full max-w-7xl px-4 pt-20 sm:px-6 lg:px-8">
       <h1 className="text-2xl font-bold text-neutral-900 sm:text-3xl">Work</h1>
       <p className="mt-4 leading-relaxed text-neutral-600">
         진행한 프로젝트와 작업 목록입니다
       </p>
-      <ul className="mt-8 grid grid-cols-3 gap-6">
+      <ul className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {workItems.map((item) => (
           <li key={item.id}>
             <Link
-              href={`/work/${item.id}`}
+              href={`/work/${item.slug}`}
               className="block min-h-32 rounded-xl border border-neutral-200 bg-white p-5 shadow-sm transition-colors hover:border-neutral-300"
             >
               <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -41,6 +41,6 @@ export default function WorkPage() {
           </li>
         ))}
       </ul>
-    </article>
+    </section>
   );
 }

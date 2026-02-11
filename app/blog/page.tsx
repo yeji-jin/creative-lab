@@ -22,7 +22,7 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <article>
+    <section className="mx-auto w-full max-w-7xl">
       <h1 className="text-2xl font-bold text-neutral-900 sm:text-3xl">Blog</h1>
       <p className="mt-4 leading-relaxed text-neutral-600">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
@@ -44,6 +44,6 @@ export default function BlogPage() {
           </li>
         ))}
       </ul>
-    </article>
+    </section>
   );
 }

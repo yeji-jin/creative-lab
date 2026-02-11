@@ -247,7 +247,7 @@ export function LionScene() {
           numberOfPieces={150}
         />
       )}
-      <div className="flex flex-wrap items-center gap-4 rounded-lg border border-neutral-200 bg-white p-3 shadow-sm">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 rounded-lg border border-neutral-200 bg-white p-3 shadow-sm">
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-sm font-medium text-neutral-700">
             사자 머리 색상

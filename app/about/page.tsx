@@ -5,8 +5,8 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <article>
+    <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
       <h1 className="text-2xl font-bold text-neutral-900 sm:text-3xl">About</h1>
-    </article>
+    </section>
   );
 }
