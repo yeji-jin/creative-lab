@@ -69,8 +69,15 @@ const SCROLL_THRESHOLD = 400;
 
 const ScrollStepperSection = () => {
   const [currentStep, setCurrentStep] = useState(0);
+  const [sectionHeight, setSectionHeight] = useState("200vh");
   const sectionRef = useRef<HTMLDivElement>(null);
   const isManualStepChange = useRef(false);
+
+  useEffect(() => {
+    setSectionHeight(
+      `${100 + ((SCROLL_THRESHOLD * steps.length) / window.innerHeight) * 100}vh`,
+    );
+  }, []);
 
   const handleStepClick = (index: number) => {
     if (!sectionRef.current) return;
@@ -123,9 +130,7 @@ const ScrollStepperSection = () => {
   return (
     <div
       ref={sectionRef}
-      style={{
-        height: `${100 + ((SCROLL_THRESHOLD * steps.length) / window.innerHeight) * 100}vh`,
-      }}
+      style={{ height: sectionHeight }}
       className="relative"
     >
       <div className="sticky top-0 h-screen bg-zinc-900 transition-opacity duration-300">
