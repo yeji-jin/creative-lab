@@ -18,7 +18,7 @@ function getCategoryBadgeStyles(category: string) {
 
 export default function WorkPage() {
   return (
-    <section className="mx-auto w-full max-w-7xl px-4 pt-20 sm:px-6 lg:px-8">
+    <section className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <h1 className="text-2xl font-bold text-neutral-900 sm:text-3xl">Work</h1>
       <p className="mt-4 leading-relaxed text-neutral-600">
         진행한 프로젝트와 작업 목록입니다

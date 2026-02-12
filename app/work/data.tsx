@@ -8,8 +8,32 @@ import ExpandableButtonPage from "./components/ExpandableButton";
 import ScrollStepperSection from "./components/ScrollStepperSection";
 import Coverflow from "./components/Coverflow";
 import CoverflowDetail from "./components/CoverflowDetail";
+import ScrollSequence from "./components/ScrollSequence";
+import Roadmap from "./components/Roadmap";
+import CurriculumTable from "./components/CurriculumTable";
 
 export const workItems = [
+  {
+    slug: "curriculum-table",
+    title: "CurriculumTable",
+    category: "Web",
+    year: "2026",
+    component: <CurriculumTable />,
+  },
+  {
+    slug: "roadmap",
+    title: "Roadmap",
+    category: "Web",
+    year: "2026",
+    component: <Roadmap />,
+  },
+  {
+    slug: "scroll-sequence",
+    title: "Scroll Sequence",
+    category: "Web",
+    year: "2026",
+    component: <ScrollSequence />,
+  },
   {
     slug: "coverflow-detail",
     title: "CoverflowDetail",
@@ -26,7 +50,7 @@ export const workItems = [
   },
   {
     slug: "courses-select",
-    title: "내일배움카드 - Courses Select",
+    title: "프로모션 - Courses Select",
     category: "Web",
     year: "2026",
     component: <CoursesSelect />,
@@ -47,7 +71,7 @@ export const workItems = [
   },
   {
     slug: "fixed-image-scroll-section",
-    title: "내일배움카드 - scroll",
+    title: "Fixed Image Scroll",
     category: "Web",
     year: "2026",
     component: <FixedImageScrollSection />,
@@ -68,7 +92,7 @@ export const workItems = [
   },
   {
     slug: "expandable-button",
-    title: "내일배움카드 - Expandable Button",
+    title: "Expandable Button",
     category: "Web",
     year: "2026",
     component: <ExpandableButtonPage />,
