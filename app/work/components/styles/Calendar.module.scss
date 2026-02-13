@@ -1,0 +1,16 @@
+/* 로컬 클래스 + :global 조합 (CSS Modules pure selector 요구사항) */
+.root {
+  :global(.fc) {
+    --fc-border-color: #e5e7eb;
+    --fc-button-bg-color: #3b82f6;
+    --fc-button-border-color: #3b82f6;
+    --fc-button-hover-bg-color: #2563eb;
+    --fc-button-hover-border-color: #2563eb;
+    --fc-button-active-bg-color: #1d4ed8;
+    --fc-today-bg-color: #d5e8a9;
+
+    :global(.fc-theme-standard th) {
+      border: 0;
+    }
+  }
+}

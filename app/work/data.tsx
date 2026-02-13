@@ -11,8 +11,32 @@ import CoverflowDetail from "./components/CoverflowDetail";
 import ScrollSequence from "./components/ScrollSequence";
 import Roadmap from "./components/Roadmap";
 import CurriculumTable from "./components/CurriculumTable";
+import LottieScrollSequence from "./components/LottieScrollSequence";
+import CalendarInfo from "./components/CalendarInfo";
+import LoadMapStep from "./components/LoadMapStep";
 
 export const workItems = [
+  {
+    slug: "load-map-step",
+    title: "LoadMapStep",
+    category: "Motion",
+    year: "2026",
+    component: <LoadMapStep />,
+  },
+  // {
+  //   slug: "calendar-info",
+  //   title: "CalendarInfo",
+  //   category: "Web",
+  //   year: "2026",
+  //   component: <CalendarInfo />,
+  // },
+  {
+    slug: "lottie-scroll",
+    title: "LottieScrollSequence",
+    category: "Motion",
+    year: "2026",
+    component: <LottieScrollSequence />,
+  },
   {
     slug: "curriculum-table",
     title: "CurriculumTable",
@@ -30,7 +54,7 @@ export const workItems = [
   {
     slug: "scroll-sequence",
     title: "Scroll Sequence",
-    category: "Web",
+    category: "Motion",
     year: "2026",
     component: <ScrollSequence />,
   },
