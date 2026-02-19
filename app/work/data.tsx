@@ -14,8 +14,40 @@ import CurriculumTable from "./components/CurriculumTable";
 import LottieScrollSequence from "./components/LottieScrollSequence";
 import CalendarInfo from "./components/CalendarInfo";
 import LoadMapStep from "./components/LoadMapStep";
+import SkillDetails from "./components/SkillDetails";
+import Floating from "./components/Floating";
+import Quiz from "./components/Quiz";
+import QuizWord from "./components/QuizWord";
 
 export const workItems = [
+  {
+    slug: "quiz",
+    title: "Quiz",
+    category: "Web",
+    year: "2026",
+    component: <Quiz />,
+  },
+  {
+    slug: "quiz-word",
+    title: "QuizWord",
+    category: "Web",
+    year: "2026",
+    component: <QuizWord />,
+  },
+  {
+    slug: "floating",
+    title: "Floating",
+    category: "Web",
+    year: "2026",
+    component: <Floating />,
+  },
+  // {
+  //   slug: "skill-details",
+  //   title: "SkillDetails",
+  //   category: "Motion",
+  //   year: "2026",
+  //   component: <SkillDetails />,
+  // },
   {
     slug: "load-map-step",
     title: "LoadMapStep",
