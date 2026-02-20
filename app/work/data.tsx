@@ -18,8 +18,16 @@ import SkillDetails from "./components/SkillDetails";
 import Floating from "./components/Floating";
 import Quiz from "./components/Quiz";
 import QuizWord from "./components/QuizWord";
+import FloatingInfoSection from "./components/FloatingInfoSection";
 
 export const workItems = [
+  {
+    slug: "floating-info-section",
+    title: "FloatingInfoSection",
+    category: "Web",
+    year: "2026",
+    component: <FloatingInfoSection />,
+  },
   {
     slug: "quiz",
     title: "Quiz",
